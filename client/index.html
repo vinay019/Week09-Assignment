@@ -1,13 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week09 Assignment</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="main-container">
+      <img
+        src="./src/assets/grand-hotel-budapest.avif"
+        alt="Grand Budapest Hotel"
+        class="bg-image"
+      />
+      <section id="forms-container" class="panel form-card">
+        <h1 id="heading">Guest Book</h1>
+        <form id="user-book-entry-form">
+          <label for="name">
+            Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </label>
+          <label for="comment">
+            Feedback
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              placeholder="What did you like/dislike about your stay here?"
+              required
+            ></textarea>
+          </label>
+          <label for="rating">
+            Rating (1-5)
+            <select id="rating" name="rating" required>
+              <option value="" selected disabled>Select</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </label>
+          <button type="submit">Submit</button>
+          <p id="form-status"></p>
+        </form>
+      </section>
+    </div>
+    <div class="feedback-section">
+      <section id="feedback-container" class="panel">
+        <h2>Guestbook entries</h2>
+        <ul id="feedback-list"></ul>
+      </section>
+    </div>
   </body>
 </html>

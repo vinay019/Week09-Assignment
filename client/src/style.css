@@ -1,96 +1,184 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+html,
 body {
+  height: 100%;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Lora", serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+#heading {
   text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #b56576; /* deep rose */
+  font-size: 1.8rem;
+  margin: 0 0 12px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.main-container {
+  position: relative;
+  height: 88vh;
+  min-height: 600px;
 }
 
-.card {
-  padding: 2em;
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.85);
 }
 
-.read-the-docs {
-  color: #888;
+.main-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 140px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(181, 101, 118, 0.08) 100%
+  );
+  pointer-events: none;
+}
+
+.form-card {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(92%, 560px);
+}
+
+.panel {
+  background: rgba(245, 245, 245, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+.feedback-section {
+  padding: 20px 16px 32px;
+  background: rgba(181, 101, 118, 0.08);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #cfd6e0;
+  border-radius: 6px;
+  background: rgba(245, 245, 245, 0.2);
+  font: inherit;
+  color: #222;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(102, 102, 102, 0.75);
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #a94d6b;
+  color: #fff;
+  font-weight: 700;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background: #eec616;
+  color: #333;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+#form-status {
+  min-height: 16px;
+}
+
+#feedback-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+#feedback-list li {
+  background: #fff;
+  border: 1px solid #e6eaf0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #222;
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    height: 72vh;
+    min-height: 480px;
   }
-  a:hover {
-    color: #747bff;
+  .form-card {
+    width: 94%;
+    bottom: 16px;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+#feedback-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(245, 245, 245, 0.5);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+#feedback-container h2 {
+  margin: 8px 12px 16px;
+  font-family: "Playfair Display", serif;
+  color: #b56576;
+}
+
+#feedback-list {
+  gap: 14px;
+  padding: 0 12px 12px;
+}
+
+#feedback-list li {
+  background: #fffafc;
+  border: 1px solid #eadbe1;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#feedback-list li h3 {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+#feedback-list li p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+#feedback-list li p:last-child {
+  margin: 8px 0 0;
+  color: #c29f4d;
+  font-weight: 600;
 }
