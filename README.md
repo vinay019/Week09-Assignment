@@ -94,9 +94,17 @@ N.A.
 
 ### Database:
 
+####Schema:
+
 ![Database Schema](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Schema.png)
 
-![DatabaseSchema](client/src/assets/DB Schema.png)
+####Query Editor:
+
+![Database Query Editor](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Query%20Editor.png)
+
+####Table:
+
+![Database Table](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Table.png)
 
 ### References:
 
