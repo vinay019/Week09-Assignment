@@ -96,6 +96,8 @@ N.A.
 
 ![Database Schema] (./client/src/assets/DB Schema.png)
 
+![DatabaseSchema] (client/src/assets/DB Schema.png)
+
 ### References:
 
 -
