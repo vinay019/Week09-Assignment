@@ -94,9 +94,9 @@ N.A.
 
 ### Database:
 
-![Database Schema] (https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Schema.png)
+![Database Schema](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Schema.png)
 
-![DatabaseSchema] (client/src/assets/DB Schema.png)
+![DatabaseSchema](client/src/assets/DB Schema.png)
 
 ### References:
 
