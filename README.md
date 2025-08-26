@@ -64,49 +64,46 @@ N.A.
 
 ### 🎯 What requirements did you achieve?
 
--
--
+I've achieved all the base requirements and a couple of stretch goal requirements.
 
 ### 🎯 Were there any requirements or goals that you were not quite able to achieve?
 
--
--
+I did not attempt the two stretch goals requirements where the user could delete posts and the one where they could like a post. Did not attempt because I spent quite a lot of time on the look and feel of the website that I was trying to achieve.Althought I would like to revist this at some point to add those stretch goal functionalities.
 
 ### 🎯 If so, could you please tell us what was it that you found difficult about these tasks?
 
--
--
+Did not have time to delve into this and explore this yet. I will explore this later.
 
 ### What went really well and what could have gone better?
 
--
--
+I think I have almost achieved the look and feel I was envisioning for this project. Although it can be a lot better and certain elements can be improved upon.
 
 ### Detailing useful external sources that helped you complete the assignment (e.g Youtube tutorials):
 
--
--
+For this I refered to the DI003 github repo where Frankie during the week had demonstrated how most of the requirements can be met. In addition to that, the external resource I used was Chat GPT. I also used the Google fonts API to fetch the Lora font which would go with the theme I was aiming for. I learnt this through a bit of googling and guidance from ChatGPT.
 
 ### Describing errors or bugs you encountered while completing your assignment:
 
--
--
+I struggled quite a lot with the styling so I spent a good chunk of time with ChatGPT for guidance on the CSS side of the code. I eventually scrapped my CSS and then got ChatGPT to help with the CSS side of things. I also struggled a bit with displaying the retrieved form elements properly on the page, I took guidance from ChatGPT for that and updated the main.js side of things. Server side of things was straightforward. Deployment had a few issues where render wasn't deploying my main.js file. I resolved it by changing the publish directory and also moved the main.js file out of the nested SRC folder.
 
 ### Database:
 
-####Schema:
+Schema:
 
 ![Database Schema](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Schema.png)
 
-####Query Editor:
+Query Editor:
 
 ![Database Query Editor](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Query%20Editor.png)
 
-####Table:
+Table:
 
 ![Database Table](https://raw.githubusercontent.com/vinay019/Week09-Assignment/refs/heads/main/client/src/assets/DB%20Table.png)
 
 ### References:
 
--
--
+https://github.com/Tech-Educators/digital-innovator-003/tree/main/week-09/06-update-client-after-post
+
+Open AI's Chat GPT
+
+Google fonts API
