@@ -8,15 +8,23 @@ Client: https://week09-assignment-client.onrender.com
 
 Server: https://week09-assignment-server.onrender.com
 
-### Live Github Pages link(if applicable):
-
-https://github.com/vinay019/Week09-Assignment
+### Live Github Pages link(if applicable): N.A.
 
 ### Team members (if in a group project): N.A.
 
 ## Project description:
 
+A ‘Guestbook’, like the ones in hotels, for users to leave a message for other users.
+
 ## Problem domain:
+
+HTTP Methods: Get
+HTTP Methods: Post
+Node.js: Express servers, routing
+JavaScript: Events, Fetch, DOM Manipulation, Async/Await Functions
+Databases: SQL, Postgres (pg)
+Server-side Packages: Express, Postgres, dotenv, CORS
+Vite: Modern Frontend Tooling for JavaScript
 
 ## User stories:
 
@@ -42,9 +50,15 @@ https://github.com/vinay019/Week09-Assignment
 
 ## Wireframe(s):
 
+N.A.
+
 ## Instructions on how to run your app:
 
+Please visit https://week09-assignment-server.onrender.com to awaken the server. After that, please visit https://week09-assignment-client.onrender.com to view the guestbook for the spectacular Grand Budapest Hotel.
+
 ## Lighthouse report:
+
+N.A.
 
 ## Reflections:
 
@@ -77,6 +91,10 @@ https://github.com/vinay019/Week09-Assignment
 
 -
 -
+
+### Database:
+
+![Database Schema] (./client/src/assets/DB Schema.png)
 
 ### References:
 
